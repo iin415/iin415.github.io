@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --text-color: white;
+}
+
+h1 {
+    display: inline-block;
+    color: white;
+    font-size: 3em;
+    font-family: "Jacquarda Bastarda 9", serif;
+    border: 1px solid blue;
+}
+
+body {
+    background-color: black;
+    margin-right: 100px;
+}
+
+p {
+    color: rgb(26, 26, 133);
+    font-size: 1.5em;
+    font-family: "VT323", monospace;
+}
+
+a {
+    color: rgb(10, 221, 10);
+    font-size: 2em;
+    font-family: "VT323", monospace;
+
+}
+
+.links{
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+a:hover {
+    color: rgb(25, 0, 252);
+}
