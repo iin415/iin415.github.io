@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /* 
 :root {
     --text-color: white;
@@ -54,9 +55,9 @@ a:hover {
 
 
 
-Dark Theme Styles
+/*Dark Theme Styles*/
 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
