@@ -64,7 +64,7 @@ a:hover {
 }
   
 body {
-    background-color: #121212;
+    background-color: #000000;
     color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -72,13 +72,21 @@ body {
 }
   
 a {
-    color: #66b2ff;
+    color: #7146ff;
     text-decoration: none;
+
 }
-  
+
+p {
+    color: #7146ff;
+    text-decoration: none;
+
+}
+
 a:hover {
-    text-decoration: underline;
-}
+    color: #b8a3ff;
+    text-decoration: none;
+} 
   
 header {
     text-align: center;
@@ -105,6 +113,7 @@ h2 {
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-size: 1.8em;
+    font-family: "VT323", monospace;
 }
   
 ul {
