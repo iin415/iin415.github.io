@@ -72,19 +72,19 @@ body {
 }
   
 a {
-    color: #7146ff;
+    color: #3478ff;
     text-decoration: none;
 
 }
 
-p {
-    color: #7146ff;
+/* p {
+    color: #3478ff;
     text-decoration: none;
 
-}
+} */
 
 a:hover {
-    color: #b8a3ff;
+    color: #002aff;
     text-decoration: none;
 } 
   
@@ -109,7 +109,7 @@ section {
 }
   
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #00ad31;
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-size: 1.8em;
