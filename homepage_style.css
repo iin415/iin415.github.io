@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+/* 
 :root {
     --text-color: white;
 }
@@ -16,7 +16,6 @@ h1 {
 
 body {
     background-color: black;
-    /* margin-right: 150px; */
 }
 
 p {
@@ -44,7 +43,7 @@ a {
 
 a:hover {
     color: rgb(25, 0, 252);
-}
+} */
 
 
 
@@ -55,9 +54,6 @@ a:hover {
 
 
 
-
-
-/* 
 Dark Theme Styles
 
 {
@@ -124,5 +120,4 @@ footer {
     border-top: 1px solid #333;
     margin-top: 40px;
     font-size: 0.9em;
-} */
-  
+} 
