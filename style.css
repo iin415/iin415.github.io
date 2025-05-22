@@ -87,6 +87,7 @@ header {
   
 header h1 {
     font-size: 3em;
+    font-family: "VT323", monospace;
     margin-bottom: 10px;
 }
   
