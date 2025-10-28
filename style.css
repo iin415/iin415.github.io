@@ -1,134 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-/* 
-:root {
-    --text-color: white;
-}
-
-h1 {
-    display: inline-block;
-    color: white;
-    font-size: 3em;
-    font-family: "Jacquarda Bastarda 9", serif;
-    border: 1px solid blue;
-    padding: 20px;
+/* Reset and base style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  caret-color: transparent;
 }
 
 body {
-    background-color: black;
+  font-family: "VT323", monospace;
+  color: #ffffff;
+  background: #000000;
+  line-height: 1.6;
 }
+
+/* Header & Nav */
+header {
+  border-bottom: 1px solid rgb(0, 255, 47);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.welcome-img {
+  align-self: center;
+
+}
+
+.welcome {
+  font-family: "VT323", monospace;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;   /* remove underline */
+  display: block;
+  width: 100vw;
+  white-space: nowrap;
+  font-size: 12vw;         /* fills most of the screen width */
+  line-height: 1;
+  overflow: hidden;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.welcome:hover {
+  color: rgb(47, 255, 0)
+}
+
 
 p {
-    color: rgb(26, 26, 133);
-    font-size: 1.5em;
-    font-family: "VT323", monospace;
+  color:rgb(255, 255, 255);
 }
 
-a {
-    color: rgb(10, 221, 10);
-    font-size: 2em;
-    font-family: "VT323", monospace;
-    text-decoration: none;
-
+.pageheader {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
 }
 
-.links{
-    display: inline-block;
-    padding: 20px;
-    padding-right: 300px;
-    margin-top: 30px;
-    margin-left: 30px;
-    border: 1px solid blue;
+.textbox {
+  text-align: center;
+  font-size: 1rem;
 }
 
-a:hover {
-    color: rgb(25, 0, 252);
-} */
-
-
-
-
-
-
-
-
-
-
-/*Dark Theme Styles*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-  
-body {
-    background-color: #000000;
-    color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-  
-a {
-    color: #3478ff;
-    text-decoration: none;
-
+/* Text logo */
+.logo-text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
 }
 
-/* p {
-    color: #3478ff;
-    text-decoration: none;
+/* Image logo */
+.logo-img img {
+  align-self: center;
+  height: 15rem; /* adjust for your design */
+  padding: none;
+  width: auto;
+}
 
-} */
 
-a:hover {
-    color: #002aff;
-    text-decoration: none;
-} 
-  
-header {
-    text-align: center;
-    margin-bottom: 40px;
+/* Mobile menu toggle */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
 }
-  
-header h1 {
-    font-size: 3em;
-    font-family: "VT323", monospace;
-    margin-bottom: 10px;
+
+@media (max-width: 700px) {
+
+  #menu-toggle {
+    display: block;
+  }
 }
-  
-main {
-    max-width: 800px;
-    margin: 0 auto;
+
+/* Grid previews */
+.grid-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
 }
-  
-section {
-    margin-bottom: 40px;
+
+.preview-card {
+  background: rgb(0, 0, 0);
+  padding: 1rem 1rem;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid rgb(109, 109, 109);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-  
-h2 {
-    border-bottom: 2px solid #00ad31;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 1.8em;
-    font-family: "VT323", monospace;
+
+.preview-card:hover {
+  transform: translateY(-4px);
+  /*box-shadow: 0 4px 12px rgb(47, 255, 0);*/
+  color:rgb(47, 255, 0);
+  border-color: rgb(47, 255, 0);
 }
-  
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-  
-.project {
-    margin-bottom: 20px;
-}
-  
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #000000;
-    margin-top: 40px;
-    font-size: 0.9em;
-} 
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
