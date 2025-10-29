@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "VT323", monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    /* --- Image Gallery --- */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .gallery img {
+      height: 200px; /* fixed row height */
+      width: auto; /* maintain natural aspect ratio */
+      object-fit: contain; /* prevents cropping */
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgb(129, 129, 129);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-text">This is my website...
+    </div>
+    <a href="home.html" style="color:#0f0; text-decoration:none;
+    font-size: 1.5rem;
+    ">← back</a>
+  </header>
+
+  <main>
+    <div class = "pageheader">Drawing/painting/collage/etc.
+
+    </div>
+        <div class="logo-img">
+        <img src="Art_design/sketchbooks.jpeg">
+        </div>
+    </h1>
+
+    <div class="gallery">
+      <img src="Art_design/blender_thumbnail.jpg" alt="">
+      <img src="Art_design/comic1.PNG" alt="">
+      <img src="Art_design/comic2.PNG" alt="">
+      <img src="Art_design/bed1.jpeg" alt="">
+      <img src="Art_design/bed2.jpeg" alt="">
+      <img src="Art_design/hands.jpg" alt="">
+      <img src="Art_design/shed.JPEG" alt="">
+      <img src="Art_design/churchprint.jpeg" alt="">
+      <img src="Art_design/cowgun.jpeg" alt="">
+      <img src="Art_design/uhh1.jpeg" alt="">
+      <img src="Art_design/uhh2.jpeg" alt="">
+      <img src="Art_design/city1.jpeg" alt="">
+
+    </div>
+  </main>
+
+  <div class = "textbox">
+    ..  . 
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Isabella Norwood</p>
+  </footer>
+</body>
+</html>
