@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "VT323", monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    /* --- Image Gallery --- */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .gallery img {
+      height: 200px; /* fixed row height */
+      width: auto; /* maintain natural aspect ratio */
+      object-fit: contain; /* prevents cropping */
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgb(129, 129, 129);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-text">This is my website...</div>
+    <a href="home.html" style="color:#0f0; text-decoration:none;
+    font-size: 1.5rem;
+    ">← back</a>
+  </header>
+
+  <main>
+    <div class = "pageheader">Contact</div>
+    </h1>
+  </main>
+
+  <div class = "textbox">
+    Email: <a href="mailto:ageofinformation.i@gmail.com">ageofinformation.i@gmail.com</a>
+  </div>
+  <div class = "textbox">
+    Instagram: <a href="https://www.instagram.com/saf3ty.pinned/">@saf3ty.pinned</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Isabella Norwood</p>
+  </footer>
+</body>
+</html>
