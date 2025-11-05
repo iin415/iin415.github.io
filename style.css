@@ -75,6 +75,11 @@ p {
   font-size: 1.7rem;
 }
 
+.textbox:a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
 /* Text logo */
 .logo-text {
   font-size: 2rem;
