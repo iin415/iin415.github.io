@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Reset and base style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  caret-color: transparent;
+}
+
+body {
+  font-family: "VT323", monospace;
+  color: #ffffff;
+  background: #000000;
+  line-height: 1.6;
+}
+
+/* Header & Nav */
+header {
+  border-bottom: 1px solid rgb(0, 255, 47);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Make images responsive */
+.welcome-img img {
+  display: block;
+  max-width: 90vw; /* never exceed 90% of viewport width */
+  height: auto;    /* maintain aspect ratio */
+  margin: 0 auto;  /* center horizontally */
+}
+
+/* Welcome text responsive */
+.welcome {
+  font-family: "VT323", monospace;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  max-width: 95vw;    /* constrain width to viewport */
+  font-size: clamp(2rem, 12vw, 10rem); /* responsive font scaling */
+  line-height: 1;
+  margin: 1rem auto;  /* add spacing around text */
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* Optional: limit main content width */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.welcome:hover {
+  color: rgb(47, 255, 0)
+}
+
+
+p {
+  color:rgb(255, 255, 255);
+}
+
+.pageheader {
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.textbox {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.textbox:a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+/* Text logo */
+.logo-text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Image logo */
+.logo-img img {
+  align-self: center;
+  height: 5rem; /* adjust for your design */
+  padding: none;
+  padding-bottom: 1rem;
+  width: auto;
+}
+
+
+/* Mobile menu toggle */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+/* Grid container */
+.grid-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+/* Each card */
+.preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid rgb(109, 109, 109);
+  padding: 1rem;
+  border-radius: 2px;
+  background-color: #000;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  width: 100%; /* fill the grid cell */
+}
+
+/* Hover effect */
+.preview-card:hover {
+  transform: translateY(-4px);
+  border-color: rgb(47, 255, 0);
+  color: rgb(47, 255, 0);
+}
+
+/* Images inside cards */
+.preview-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border-radius: 2px;
+}
+
+/* Text below image */
+.preview-card span {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
