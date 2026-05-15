@@ -18,7 +18,7 @@ body {
 
 /* Header & Nav */
 header {
-  border-bottom: 1px solid rgb(0, 255, 47);
+  border-bottom: 1px solid rgb(255, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +57,7 @@ main {
 }
 
 .welcome:hover {
-  color: rgb(47, 255, 0)
+  color: rgb(255, 0, 0)
 }
 
 
@@ -139,8 +139,8 @@ p {
 /* Hover effect */
 .preview-card:hover {
   transform: translateY(-4px);
-  border-color: rgb(47, 255, 0);
-  color: rgb(47, 255, 0);
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 /* Images inside cards */

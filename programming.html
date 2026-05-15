@@ -44,19 +44,37 @@
       font-size: 0.9rem;
       color: #fff;
     }
+
+    canvas { 
+      width: 800px; 
+      height: 800px; 
+      border: 1px solid black; 
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="logo-text">This is my website...
     </div>
-    <a href="index.html" style="color:#0f0; text-decoration:none;
+    <a href="index.html" style="color:rgb(255, 0, 0); text-decoration:none;
     font-size: 1.5rem;
     ">← back</a>
   </header>
 
   <main>
     <div class = "pageheader">Code-based projects </div>
+    <!-- <canvas id="canvas"></canvas>
+    <script src="app.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      canvas.focus();
+      createApp({
+        canvas: canvas
+      }).then((Module) => {
+        console.log("WASM loaded");
+      });
+    </script> -->
+
     <div class = "textbox">Game development in OpenGL / C++: This is a project I started working on
       in December 2025 as part of a computer graphics class. I drew the textures on paper and modeled
      the game objects in Blender.</div>
@@ -74,7 +92,7 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 Isabella Norwood</p>
+    <p>&copy; 2026 Isabella Norwood-Paulus</p>
   </footer>
 </body>
 </html>
