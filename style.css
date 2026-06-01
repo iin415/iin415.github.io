@@ -12,13 +12,13 @@
 body {
   font-family: "VT323", monospace;
   color: #ffffff;
-  background: #000000;
+  background: #171717;
   line-height: 1.6;
 }
 
 /* Header & Nav */
 header {
-  border-bottom: 1px solid rgb(255, 0, 0);
+  border-bottom: 1px solid rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +57,7 @@ main {
 }
 
 .welcome:hover {
-  color: rgb(255, 0, 0)
+  color: rgb(0, 140, 255)
 }
 
 
@@ -140,8 +140,8 @@ p {
 /* Hover effect */
 .preview-card:hover {
   transform: translateY(-4px);
-  border-color: rgb(255, 0, 0);
-  color: rgb(255, 0, 0);
+  border-color: rgb(0, 140, 255);
+  color: rgb(0, 140, 255)
 }
 
 /* Images inside cards */
