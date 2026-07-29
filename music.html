@@ -38,6 +38,57 @@
       box-shadow: 0 0 10px rgb(129, 129, 129);
     }
 
+    main.music-layout {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 2rem;
+      align-items: flex-start;
+      width: auto;
+      max-width: 980px;
+      margin: 0;
+      padding: 2rem;
+      align-self: flex-start;
+    }
+
+    .music-left {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+    }
+
+    .music-left .pageheader {
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    .music-right {
+      flex: 0 0 220px;
+      min-width: 320px;
+      max-width: 400px;
+      align-self: flex-start;
+      margin-left: 0.5rem;
+    }
+
+    .music-right .textbox {
+      min-height: 220px;
+      border: 1px solid #19191d;
+      padding: 1rem;
+      background: transparent;
+      text-align: left;
+      display: block;
+      width: 100%;
+    }
+
+    .music-left .textbox {
+      text-align: left;
+      align-self: flex-start;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -54,58 +105,66 @@
     ">← back</a>
   </header>
 
-  <main>
-    <div class = "pageheader">Music</div>
-    </h1>
+  <main class="music-layout">
+    <div class="music-left">
+      <div class="pageheader">Music</div>
 
-    <div class="gallery">
-      <img src="Band_stuff/EP_cover.jpg" alt="">
+      <div class="gallery">
+        <img src="Band_stuff/EP_cover.jpg" alt="">
+      </div>
+
+      <div class="textbox">
+        Stresser is:<br>
+        Kiernen Ann - vocals<br>
+        Isabella Norwood-Paulus - guitar<br>
+        James Frederick - guitar<br>
+        June Matson - bass<br>
+        September Gudgel - drums<br><br>
+        Our 4-song EP is available on streaming services:<br>
+
+        <a href="https://www.youtube.com/@stresserband"
+            style="color:rgb(255, 0, 0); text-decoration:none;
+            padding-bottom: 2rem">
+            YouTube *
+        </a>
+        <a href="https://stresserband.bandcamp.com/album/stresser"
+            style="color:rgb(255, 0, 0); text-decoration:none;
+            padding-bottom: 2rem">
+            Bandcamp *
+        </a>
+        <a href="https://open.spotify.com/artist/4oagqgm3ZwhsPRavVeYDAr"
+            style="color:rgb(255, 0, 0); text-decoration:none;
+            padding-bottom: 2rem">
+            Spotify *
+        </a>
+        <a href="https://www.instagram.com/stresser.band/"
+            style="color:rgb(255, 0, 0); text-decoration:none;
+            padding-bottom: 2rem">
+            Instagram<br><br><br>
+        </a>
+      </div>
+    </div>
+
+    <div class="music-right">
+      <div class="pageheader">Physical Releases, Interviews</div>
+      <div class="textbox">
+      Geek USA Records: <a href="https://geekusarecords.bigcartel.com/product/stresser-stresser-ep">CDs</a><br>
+      Milkcrate Merch: <a href="https://www.instagram.com/p/DYVamr_Eq5a/?img_index=1">Tapes</a><br>
+      Hektik Zine: <a href="https://hektik.bigcartel.com/product/hektik-zine-vol2-lucky-rabbits-feet-come-from-unlucky-rabbits">Interview</a></div>
     </div>
   </main>
 
-  <div class = "textbox">
-    Stresser is:<br>
-    Kiernen Ann - vocals<br>
-    Isabella Norwood-Paulus - guitar<br>
-    James Frederick - guitar<br>
-    June Matson - bass<br>
-    September Gudgel - drums<br><br>
-    Our 4-song EP is available on streaming services:<br>
-
-    <a href = "https://www.youtube.com/@stresserband"
-        style="color:rgb(255, 0, 0); text-decoration:none;
-        padding-bottom: 2rem">
-        YouTube *
-    </a>
-    <a href = "https://stresserband.bandcamp.com/album/stresser"
-        style="color:rgb(255, 0, 0); text-decoration:none;
-        padding-bottom: 2rem">
-        Bandcamp *
-    </a>
-    <a href = "https://open.spotify.com/artist/4oagqgm3ZwhsPRavVeYDAr"
-        style="color:rgb(255, 0, 0); text-decoration:none;
-        padding-bottom: 2rem">
-        Spotify *
-    </a>
-    <a href = "https://www.instagram.com/stresser.band/"
-        style="color:rgb(255, 0, 0); text-decoration:none;
-        padding-bottom: 2rem">
-        Instagram<br><br><br>
-    </a>
-
-    </main>
-
-    <!-- <a href = "https://youtu.be/5Dc6pofk-iU?si=k1F0l5PedUQNq7O5"
-            style="color:rgb(255, 0, 0); text-decoration:none;
-            padding-bottom: 2rem">
-            live set at the Lorax in Eugene Oregon<br>
-    </a>
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/5Dc6pofk-iU?si=VAdti8mOZ03xpKEE"
-     title="YouTube video player" frameborder="0" allow="accelerometer; 
-     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-     web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   -->
+  <!-- <a href = "https://youtu.be/5Dc6pofk-iU?si=k1F0l5PedUQNq7O5"
+          style="color:rgb(255, 0, 0); text-decoration:none;
+          padding-bottom: 2rem">
+          live set at the Lorax in Eugene Oregon<br>
+  </a>
+  <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/5Dc6pofk-iU?si=VAdti8mOZ03xpKEE"
+   title="YouTube video player" frameborder="0" allow="accelerometer; 
+   autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+   web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ -->
 
   <footer>
     <p>&copy; 2026 Isabella Norwood-Paulus</p>
